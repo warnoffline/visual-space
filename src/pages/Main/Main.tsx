@@ -8,12 +8,12 @@ import './Main.scss'
 const Main = () => {
     return(
         <div className="main">
-            <Header></Header>
-            <FirstBlock></FirstBlock>
-            <SecondBlock></SecondBlock>
-            <Advantage></Advantage>
-            <Services></Services>
-            <Footer></Footer>
+            <Header />
+            <FirstBlock />
+            <SecondBlock /> 
+            <Advantage />
+            <Services />
+            <Footer />
         </div>
     )
 }

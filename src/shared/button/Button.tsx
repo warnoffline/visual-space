@@ -4,9 +4,9 @@ type ButtonProps = {
     className?: string
 }
 
-const Button = ({children, className}:ButtonProps) => {
+const Button = ({children, className}: ButtonProps) => {
     return(
-        <button className={className ? className : "button__base"}>
+        <button className={className || "button__base"}>
             {children}
         </button>
     )

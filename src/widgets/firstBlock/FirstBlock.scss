@@ -1,4 +1,5 @@
 .first{
+
     width: 100%;
     height: 798px;
     display: flex;
@@ -8,10 +9,11 @@
     &__center{
         width: 1280px;
         height: 100%;
-
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        position: relative;
+        z-index: 0;
         h1{
             font-size: 105px;
             font-family: 'Unbounded';
@@ -30,4 +32,18 @@
             gap: 60px;
         }
     }
+    &__image{
+        position: absolute;
+
+        z-index: -1;
+        &--left{
+            top: -80px;
+            left: -80px;
+        }
+        &--right{        
+            right: -100px;
+            top: -100px;
+        }
+    }
+
 }

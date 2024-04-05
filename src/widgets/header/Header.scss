@@ -70,17 +70,16 @@
         font-size: 20px;
         font-weight: 500;
         font-family: 'Onest';
-
-        background-color: #232323;
-        border: 2px solid #2E2E2E;
         border-radius: 55px;
+        background-size: 300% 100%;
+        transition: all .4s ease-in-out;
+        background-image: linear-gradient(to right, #232323,#232323, #8E2DE2, #4A00E0);
 
-        transition: 0.4s;  
     }
     &__button:hover{
-        border: 2px solid #7b00e0;
-        background-color: #7118e1;
-        transition: 0.4s;  
+        background-position: 100% 0;
+        transition: all .8s ease-in-out; 
+        
     }
 }
 .logo{
