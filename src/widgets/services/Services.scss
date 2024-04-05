@@ -1,0 +1,136 @@
+.services{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    &__center{
+        width: 1280px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        &__blocks{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+        &__h{
+            font-size: 64px;
+            font-family: 'Unbounded';
+            font-weight: 700;
+            color: #E6E6E6;
+        }
+        &__block{
+            background-color: #121212;
+            width: 100%;
+            border: 2px solid #1B1B1B;
+            border-radius: 55px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            padding: 20px 0;
+            &__accordion{
+                width: 1200px;
+                padding:0 !important;
+            }
+            &__second{
+                width: 1200px;
+                background-color: #232323;
+                border: 2px solid #2E2E2E;
+                border-radius: 27.5px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 10px 0;
+                gap: 10px;
+                &__accordion{
+                    width: 1152px;
+                    background-color: #4D4D4D;
+                    border: 2px solid #7A7A7A;
+                    border-radius: 27.5px;
+                    color: #FFFFFF;
+                    padding: 0;
+                    .accordion__title{
+                        font-size: 24px;
+                        font-weight: 500;
+                        font-family: 'Unbounded';
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                    .accordion__description{
+                        font-size: 20px;
+                        font-weight: 500;
+                        font-family: 'Onest';
+                    }
+                }
+            }
+            &__first{
+                &__accordion{
+                    width: 1200px;
+                    height: 53px;
+                    background-color: #232323;
+                    border: 2px solid #4D4D4D;
+                    border-radius: 27.5px;
+                    color:#E6E6E6;
+                    font-size: 20px;
+                    font-weight: 500;
+                    font-family: 'Unbounded';
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+            &__h{
+                width: 1200px;
+               h2{
+                font-size: 36px;
+                font-family: 'Unbounded';
+                font-weight: 900;
+                color: #E6E6E6;
+               }
+               p{
+                font-size: 24px;
+                font-weight: 500;
+                font-family: 'Onest';
+                color: #CACACA;
+               }
+            }
+        }
+    }
+}
+.accordion{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.note{
+    width: 1152px;
+    h3{
+        font-family: 'Unbounded';
+        font-weight: 500;
+        font-size: 24px;
+        color: #FFFFFF;
+    }
+    p{
+        color: #D0D0D0;
+        font-size: 20px;
+        font-family: 'Onest';
+        font-weight: 500;
+    }
+}
+.chakra-accordion{
+    border-style: none !important;
+    width: 1200px;
+}
+.chakra-accordion__item{
+    border-top-width: 0px !important;
+    border-bottom-width: 0px !important;
+}
+.chakra-accordion__panel{
+    border-style: none !important;
+}
+.chakra-collapse{
+    border-style: none !important;
+}

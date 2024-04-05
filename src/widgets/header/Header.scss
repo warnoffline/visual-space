@@ -1,0 +1,96 @@
+.header{
+    width: 100%;
+    height: 82px;
+    background-color: #0F0F0F;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid #2E2E2E;
+}
+.head{
+    width: 1280px;
+    height: 82px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__links{
+        width: 560px;
+        height: 60px;
+        display: flex;
+        padding: 0 20px;
+        background-color: #232323;
+        border: 2px solid #2E2E2E;
+        border-radius: 55px;
+    
+        color:#B6B6B6;
+        justify-content: space-around;
+        align-items: center;
+        a{
+            font-family: 'Onest';
+            font-weight: 500;
+            font-size: 20px;
+            transition: 0.5s;
+        }
+        a:hover{
+            text-shadow:
+                0 0 5px #4A00E080,
+                0 0 10px #8E2DE280,
+                0 0 20px #4A00E080,
+                0 0 20px #8E2DE280,
+                0 0 20px #4A00E080,
+                0 0 20px #8E2DE280,
+                0 0 20px #4A00E080,
+                0 0 30px #8E2DE280,
+                0 0 30px #4A00E080,
+                0 0 30px #8E2DE280,
+                0 0 30px #4A00E080,
+                0 0 30px #8E2DE280,
+                0 0 40px #4A00E080,
+                0 0 40px #8E2DE280,
+                0 0 40px #4A00E080,
+                0 0 40px #8E2DE280,
+                ;
+            transition: 0.5s;
+        }
+        p{
+            color: #2E2E2E;
+            font-size: 20px;
+        }
+        &-line{
+            width: 2px;
+            height: 36px;
+            background-color: #2E2E2E;
+        }
+    }
+    &__button{
+        height: 60px;
+        width: 242px;
+
+        color: #E6E6E6;
+        font-size: 20px;
+        font-weight: 500;
+        font-family: 'Onest';
+
+        background-color: #232323;
+        border: 2px solid #2E2E2E;
+        border-radius: 55px;
+
+        transition: 0.4s;  
+    }
+    &__button:hover{
+        border: 2px solid #7b00e0;
+        background-color: #7118e1;
+        transition: 0.4s;  
+    }
+}
+.logo{
+    background-color: #232323;
+    border: 2px solid #2E2E2E;
+    border-radius: 55px;
+    height: 60px;
+    width: 94px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
