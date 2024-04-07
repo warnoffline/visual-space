@@ -102,6 +102,7 @@
 }
 .hamburger{
     img{
+        top: 20px;
         right: 20px;
         width: 40px;
         height: 40px; 
@@ -128,7 +129,6 @@
 
     }
     &__nav{
-        padding: 50px 0;
         gap: 10px;
         display: flex;
         flex-direction: column;
