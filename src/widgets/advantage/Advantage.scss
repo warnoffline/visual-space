@@ -66,3 +66,43 @@
         }
     }
 }
+@media screen and (max-width: 600px) and (min-width: 300px) {
+    .advantage{
+        height: 100%;
+        padding: 20px 0;
+        &__h{
+            font-size: 28px;
+        }
+        &__center{
+            width: 90%;
+            gap: 30px;
+        }
+    }
+    .advantage__center__block{
+        width: 100%;
+        display: flex;
+        .block__txt{
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+            h2{
+                font-size: 20px;
+                color: #E6E6E6;
+            }
+            p{
+                width: 292px;
+                font-size: 16px;
+            }
+        }
+        .block__number{
+            font-size: 20px;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+            p{
+                top: 20%;
+            }
+        }
+    }
+}

@@ -47,3 +47,40 @@
     }
 
 }
+@media screen and (max-width: 600px) and (min-width: 300px) {
+    .first{
+        height: 100%;
+        padding: 50px 0;
+        &__center{
+            width: 90%;
+            gap: 50px;
+            display: flex;
+            h1{
+                font-size: 40px;
+                line-height: 42.4px;
+                text-align: center;
+            }
+            h2{
+                font-size: 24px;
+                line-height: 25.44px;
+                text-align: center;
+                width: 75%;
+                align-self: center;
+                color: #CACACA;
+            }
+        }
+    }
+    .first__image--left{
+        top: -130px;
+        left: -50px;
+    }
+    .first__image--right{
+        right: 0px;
+        top: -65px;
+    }
+    .modal_btn{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}

@@ -148,3 +148,49 @@
 .chakra-collapse{
     border-style: none !important;
 }
+@media screen and (max-width: 600px) and (min-width: 300px) {
+    .services{
+        &__center{
+            width: 90%;
+            &__h{
+                font-size: 28px;
+            }
+            &__block{
+                &__accordion{
+                    width: 90%;
+                }
+                &__second{
+                    width: 90%;
+                    &__accordion{
+                        width: 90%;
+                    }
+                }
+                &__first{
+                    &__accordion{
+                        width: 90%;
+                    }
+                }
+                &__h{
+                    width: 90%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    h2{
+                        font-size: 24px;
+                        text-align: center;
+                    }
+                    p{
+                        font-size: 16px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+    .chakra-accordion{
+        width: 90%;
+    }
+    .note{
+        width: 90%;
+    }
+}
