@@ -13,16 +13,17 @@ const animation = {
     viewport: { once: true },
     transition: { duration: 1.5 }
 }
+
 const FirstBlock = ({onOpen, isOpen, onClose}: FirstBlockProps) => {
     return (
         <div className='first'>
             <div className='first__center'>
-                <img src="./blur-stars.png" alt="#" className='first__image first__image--left' />
-                <img src="./star.png" alt="#" className='first__image first__image--right' />
+                <img className='first__image first__image--left' src={window.screen.width > 600 ? "./blur-stars.png" : "./mob_stars.png"}  alt="" />
+                <img className='first__image first__image--right' src={window.screen.width > 600 ? "./star.png" : "./mobile_star.png"}  alt="" />
                 <motion.h1 {...animation}>Web Studio helping startup's</motion.h1>
                 <motion.div {...animation }className='first__center-down'>
                     <h2 {...animation}>Команда, понимающая ваши проблемы</h2>
-                    <div>
+                    <div className='modal_btn'>
                         <Button onClick={onOpen}>Оставить заявку</Button>
                     </div>
                 </motion.div>

@@ -15,9 +15,12 @@ const Main = () => {
             <SecondBlock /> 
             <Advantage />
             <Services />
-            <Footer />
         </div>
     )
 }
-
+//
+//
+//
+//
+//<Footer />
 export default Main
