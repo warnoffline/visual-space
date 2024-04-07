@@ -1,27 +1,34 @@
 import { Accordion, AccordionItem, AccordionButton, AccordionPanel, AccordionIcon } from "@chakra-ui/react";
 import './Services.scss'
 import { useState } from "react";
+import {motion} from 'framer-motion'
+const animation = {
+    initial: { opacity: 0, y: 50 },
+    whileInView: { opacity: 1, y: 0 },
+    viewport: { once: true },
+    transition: { duration: 1.5 }
+}
 const Services = () => {
 
     return (
         <div className="services">
             <div className="services__center">
-                <h1 className="services__center__h">Услуги</h1>
+                <motion.h1 {...animation} className="services__center__h">Услуги</motion.h1>
                 <div className="services__center__blocks">
-                    <div className="services__center__block">
+                    <motion.div {...animation} className="services__center__block">
                         <div className="services__center__block__h">
                             <h2>Landing Page</h2>
                             <p>Сайт визитка, который помагает компании рассказать о себе в одной странице</p>
                         </div>
                             <MyAccordion />
-                    </div>
-                    <div className="services__center__block">
+                    </motion.div>
+                    <motion.div {...animation} className="services__center__block">
                         <div className="services__center__block__h">
                             <h2>Корпоративный сайт</h2>
                             <p>Многостраничный сайт для бизнеса. Передает главную информацию о продукте.</p>
                         </div>
                         <MyAccordion/>
-                    </div>
+                    </motion.div>
                 </div>
             </div>
         </div>

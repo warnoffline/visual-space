@@ -21,6 +21,16 @@
                 font-size: 20px;
             }
         }
+        .social__img{
+            width: 40px;
+            height: 40px;
+            background-image: url('./img/Property\ 1=Default.svg');
+            transition: 0.5s;
+        }
+        .social__img:hover{
+            background-image: url('./img/Property\ 1=Variant2.svg');
+            transition: 0.5s;
+        }
     }
     &__logo{
         display: flex;
@@ -47,6 +57,27 @@
         width: 438px;
         display: flex;
         justify-content: space-between;
+        a:hover{
+            text-shadow:
+                0 0 5px #4A00E080,
+                0 0 10px #8E2DE280,
+                0 0 20px #4A00E080,
+                0 0 20px #8E2DE280,
+                0 0 20px #4A00E080,
+                0 0 20px #8E2DE280,
+                0 0 20px #4A00E080,
+                0 0 30px #8E2DE280,
+                0 0 30px #4A00E080,
+                0 0 30px #8E2DE280,
+                0 0 30px #4A00E080,
+                0 0 30px #8E2DE280,
+                0 0 40px #4A00E080,
+                0 0 40px #8E2DE280,
+                0 0 40px #4A00E080,
+                0 0 40px #8E2DE280,
+                ;
+            transition: 0.5s;
+        }
     }
 
 }

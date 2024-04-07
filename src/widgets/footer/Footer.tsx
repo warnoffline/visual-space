@@ -1,6 +1,5 @@
 import './Footer.scss'
 import logo from './img/logo image.svg'
-import telegram from './img/Property 1=Default.svg'
 const Footer = () => {
     return (
         <footer className='footer'> 
@@ -16,7 +15,7 @@ const Footer = () => {
                 </div>
                 <div className="social__media">
                     <p>Соцсети для связи: </p>
-                    <img src={telegram} alt="" />
+                    <a href='#' className='social__img'></a>
                 </div>
             </div>
         </footer>
