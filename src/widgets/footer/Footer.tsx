@@ -15,7 +15,13 @@ const Footer = () => {
                    </div>
                 <div className="social__media">
                     <p>Соцсети для связи: </p>
-                    <a href='#' className='social__img'></a>
+                    {window.screen.width > 600 ? 
+                        <a href='#' className='social__img'></a> : 
+                        <a className="telegram">
+                            <p>Telegram</p>
+                            <div className="social__img"></div>
+                        </a>
+                    }
                 </div>
             </div>
         </footer>

@@ -102,17 +102,27 @@
 }
 .hamburger{
     img{
-        top: 20px;
-        right: 20px;
         width: 40px;
         height: 40px; 
-        position: fixed;
     }
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.hamburger__close{
+    img{
+        width: 40px;
+        height: 40px; 
+    }
+    display: flex;
+    justify-content: end;
+}
 .mob{
+    &__btn-close{
+        width: 90%;
+        display: flex;
+        justify-content: end;
+    }
     &__links{
         position: fixed;
         bottom: 0;
@@ -125,7 +135,7 @@
         height: 100vh;
         background-color: #0F0F0F;
         color: white;
-        padding: 20% 0;
+        padding: 20px 0;
 
     }
     &__nav{

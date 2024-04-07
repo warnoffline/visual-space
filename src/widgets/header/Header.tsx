@@ -56,6 +56,9 @@ function NavBurger({onOpen} : HeaderProps){
             animate={menuOpen ? "open" : "closed"}
             variants={variants}
         >
+            <div className='mob__btn-close'>
+                <button className='hamburger__close' onClick={closeMenu}><img src={close} alt='close'/></button>
+            </div>
             <nav className='mob__nav'>
                 <a href="#second" onClick={closeMenu}>О нас</a>
                 <a href="#advantage" onClick={closeMenu}>Преимущества</a>
@@ -73,7 +76,7 @@ function NavBurger({onOpen} : HeaderProps){
                 </button>
             </div>
         </motion.div>
-        <button className='hamburger' onClick={closeMenu}><img src={menuOpen ? close : menu} alt='menu'/></button>
+        <button className='hamburger' onClick={closeMenu}><img src={menu} alt='menu'/></button>
         </>
     )
 }
