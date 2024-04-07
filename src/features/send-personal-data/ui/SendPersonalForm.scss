@@ -1,0 +1,59 @@
+.send-personal {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    &__inputs{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+        "input1 textarea"
+        "input2 textarea";
+        row-gap: 10px;
+        column-gap: 10px;
+    }
+    &__input {
+        font-size: 20px;
+        background-color: #232323;
+        border:1px solid #3D3D3D;
+        padding-block: 30px;
+        border-radius: 55px;
+        color: #DBDBDB;
+        &:focus{
+            outline: none;
+            border-color: #DBDBDB;
+        }
+        &--upper{
+            grid-area: input1
+        }
+        &--lower{
+            grid-area: input2
+        }
+    }
+
+    &__error {
+        color: #FC8181;
+    }
+
+    &__textarea {
+        font-size: 20px;
+        background-color: #232323;
+        border:1px solid #3D3D3D;
+        color: #DBDBDB;
+        border-radius: 35px;
+        height: 100%;
+        grid-area: textarea;
+        &:focus{
+            outline: none;
+            border-color: #DBDBDB;
+        }
+    }
+    &__submit{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+    &__agreement{
+        color:#DBDBDB;
+    }
+}

@@ -1,6 +1,12 @@
-import './FirstBlock.scss'
 import Button from '../../shared/button/Button';
-const FirstBlock = () => {
+import { MyModal } from '../MyModal';
+import './FirstBlock.scss'
+type FirstBlockProps = {
+    isOpen: boolean;
+    onOpen: () => void;
+    onClose: () => void;
+}
+const FirstBlock = ({onOpen, isOpen, onClose}: FirstBlockProps) => {
     return (
         <div className='first'>
             <div className='first__center'>
@@ -10,10 +16,11 @@ const FirstBlock = () => {
                 <div className='first__center-down'>
                     <h2>Команда, понимающая ваши проблемы</h2>
                     <div>
-                        <Button>Оставить заявку</Button>
+                        <Button onClick={onOpen}>Оставить заявку</Button>
                     </div>
                 </div>
             </div>
+            <MyModal isOpen={isOpen} onClose={onClose}/>
         </div>
     )
 }
