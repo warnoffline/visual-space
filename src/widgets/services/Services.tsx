@@ -11,7 +11,7 @@ const animation = {
 const Services = () => {
 
     return (
-        <div className="services">
+        <div id='services' className="services">
             <div className="services__center">
                 <motion.h1 {...animation} className="services__center__h">Услуги</motion.h1>
                 <div className="services__center__blocks">

@@ -21,7 +21,7 @@ export function SendPersonalForm({onClose}: SendPersonalFormProps) {
             </div>
             
             <div className="send-personal__block">
-                <Input type="phone" className="send-personal__input send-personal__input--lower" placeholder="Номер телефона"  {...register("phone", {required: true})} isInvalid={!!errors.phone}/>
+                <Input type="phone" className="send-personal__input send-personal__input--lower" placeholder="Номер телефона"  {...register("phone", {required: true, pattern: /^\+?\d{11}$/})} isInvalid={!!errors.phone}/>
                 {errors.phone && (
                 <p className="send-personal__error">Введите корректный телефон</p>
                 )}

@@ -9,10 +9,10 @@ const Footer = () => {
                     <p>© Visual Space 2024. <br/> Использование сайта, в том числе подача заявок, означает согласие с пользовательским соглашением</p>
                 </div>
                 <div className="footer__links">
-                    <a href="#">О нас</a>
-                    <a href="#">Преимущества</a>
-                    <a href="#">Услуги</a>
-                </div>
+                    <a href="#second">О нас</a>
+                    <a href="#advantage">Преимущества</a>
+                    <a href="#services">Услуги</a>
+                   </div>
                 <div className="social__media">
                     <p>Соцсети для связи: </p>
                     <a href='#' className='social__img'></a>

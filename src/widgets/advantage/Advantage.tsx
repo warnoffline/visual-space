@@ -9,7 +9,7 @@ const animation = {
 }
 const Advantage = () => {
     return (
-        <div className="advantage">
+        <div id='advantage' className="advantage">
             <div className="advantage__center">
                 <motion.h1
                     {...animation}

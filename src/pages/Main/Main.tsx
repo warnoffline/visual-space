@@ -12,15 +12,11 @@ const Main = () => {
         <div className="main">
             <Header isOpen={isOpen} onOpen={onOpen} onClose={onClose}/>
             <FirstBlock isOpen={isOpen} onOpen={onOpen} onClose={onClose}/>
-            <SecondBlock /> 
+            <SecondBlock/> 
             <Advantage />
             <Services />
+            <Footer />
         </div>
     )
 }
-//
-//
-//
-//
-//<Footer />
 export default Main

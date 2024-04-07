@@ -15,10 +15,12 @@
         position: relative;
         z-index: 0;
         h1{
+            
             font-size: 105px;
             font-family: 'Unbounded';
             font-weight: 700;
             color: #E6E6E6;
+            line-height: 111.3px;
         }
         h2{
             font-size: 36px;
@@ -37,12 +39,12 @@
 
         z-index: -1;
         &--left{
-            top: -80px;
-            left: -80px;
+            top: 0px;
+            left: 0px;
         }
         &--right{        
-            right: -100px;
-            top: -100px;
+            right: 0px;
+            top: 0px;
         }
     }
 
@@ -55,6 +57,9 @@
             width: 90%;
             gap: 50px;
             display: flex;
+            &-down{
+                align-items: center;
+            }
             h1{
                 font-size: 40px;
                 line-height: 42.4px;
@@ -71,16 +76,17 @@
         }
     }
     .first__image--left{
-        top: -130px;
-        left: -50px;
+        top: 0px;
+        left: 0px;
     }
     .first__image--right{
         right: 0px;
-        top: -65px;
+        top: 0px;
     }
     .modal_btn{
         display: flex;
         justify-content: center;
-        width: 100%;
+        width: 90%;
+        align-items: center;
     }
 }

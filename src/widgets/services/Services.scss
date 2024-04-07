@@ -157,12 +157,24 @@
             }
             &__block{
                 &__accordion{
-                    width: 90%;
+                    width: 100%;
                 }
                 &__second{
-                    width: 90%;
+                    width: 100% !important;
                     &__accordion{
                         width: 90%;
+                        .accordion__title{
+                            font-size: 20px;
+                            font-weight: 500;
+                            font-family: 'Unbounded';
+                            display: flex;
+                            justify-content: space-between;
+                        }
+                        .accordion__description{
+                            font-size: 13px;
+                            font-weight: 500;
+                            font-family: 'Onest';
+                        }
                     }
                 }
                 &__first{
@@ -192,5 +204,11 @@
     }
     .note{
         width: 90%;
+        h3{
+            font-size: 20px;
+        }
+        p{
+            font-size: 12px;
+        }
     }
 }

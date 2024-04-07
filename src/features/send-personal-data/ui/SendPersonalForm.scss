@@ -11,17 +11,21 @@
         "input2 textarea";
         row-gap: 10px;
         column-gap: 10px;
+        font-family: 'Onest';
+        font-size: 16px;
+        font-weight: 500;
+        color: #CACACA;
     }
     input {
         font-size: 20px;
         background-color: #232323;
-        border:1px solid #3D3D3D;
+        border: 2px solid #2E2E2E;
         padding-block: 30px;
         border-radius: 55px;
-        color: #DBDBDB;
+        color: #CACACA;
         &:focus{
             outline: none;
-            border-color: #DBDBDB;
+            border-color: #CACACA;
         }
         &--upper{
             grid-area: input1
@@ -29,6 +33,9 @@
         &--lower{
             grid-area: input2
         }
+    }
+    input::placeholder{
+        color: #515151;
     }
 
     &__error {
@@ -38,15 +45,19 @@
     textarea {
         font-size: 20px ; 
         background-color: #232323;
-        border:1px solid #3D3D3D ;
-        color: #DBDBDB ;
+        border-radius: 24px;
+        border: 2px solid #2E2E2E;
+        color: #CACACA ;
         border-radius: 35px ;
         height: 100%;
         grid-area: textarea;
         &:focus{
             outline: none;
-            border-color: #DBDBDB;
+            border-color: #CACACA;
         }
+    }
+    textarea::placeholder{
+        color:#515151;
     }
     &__submit{
         display: flex;
@@ -54,6 +65,25 @@
         align-items: center;
     }
     &__agreement{
-        color:#DBDBDB;
+        width: 50%;
+        color:#CACACA;
+    }
+}
+@media screen and (max-width: 600px) and (min-width: 300px) {
+    .send-personal{
+        &__inputs{
+            display: flex;
+            flex-direction: column;
+        }
+        textarea{
+            min-height: 120px;
+        }
+        &__submit{
+            flex-direction: column;
+        }
+        &__agreement{
+            font-size: 12px;
+            font-weight: 400;
+        }
     }
 }

@@ -18,6 +18,7 @@ const variants = {
 const Header = ({isOpen, onOpen, onClose} : HeaderProps) => {
     return (
         <header className='header'>
+            <div className='header_fixed'>
             <div className='head'>
                 <div className="logo">
                     <img src={logo} alt="" />
@@ -25,16 +26,17 @@ const Header = ({isOpen, onOpen, onClose} : HeaderProps) => {
                 {window.screen.width > 600 ? 
                 (<>
                     <nav className='head__links'>
-                        <a href="#">О нас</a>
+                        <a href="#second">О нас</a>
                         <div className="head__links-line"></div>
-                        <a href="#">Преимущества</a>
+                        <a href="#advantage">Преимущества</a>
                         <div className="head__links-line"></div>
-                        <a href="#">Услуги</a>
+                        <a href="#services">Услуги</a>
                     </nav>
                     <button onClick={onOpen} className='head__button'>Оставить заявку</button>
                 </>) :
                 (<NavBurger isOpen={isOpen} onOpen={onOpen} onClose={onClose}/>)
                 }
+            </div>
             </div>
             <MyModal isOpen={isOpen} onClose={onClose} />
         </header>
@@ -55,9 +57,9 @@ function NavBurger({isOpen, onOpen, onClose} : HeaderProps){
             variants={variants}
         >
             <nav className='mob__nav'>
-                <a href="#" onClick={closeMenu}>О нас</a>
-                <a href="#" onClick={closeMenu}>Преимущества</a>
-                <a href="#" onClick={closeMenu}>Услуги</a>
+                <a href="#second" onClick={closeMenu}>О нас</a>
+                <a href="#advantage" onClick={closeMenu}>Преимущества</a>
+                <a href="#services" onClick={closeMenu}>Услуги</a>
             </nav>
             <div className="mob__nav-buttons">
                 <p>Оставьте заявку для дальнейшей консультации</p>

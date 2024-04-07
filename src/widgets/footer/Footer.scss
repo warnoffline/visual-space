@@ -81,3 +81,42 @@
     }
 
 }
+@media screen and (max-width: 600px) and (min-width: 300px) {
+    .footer{
+        height: 100%;
+        &__logo{
+            display: flex;
+            flex-direction: column;
+            align-items: baseline;
+            height: 100% !important;
+            img{
+                width: 53px;
+            }
+            p{
+                font-size: 8px;
+                width: 89px;
+            }
+        }
+        &__links{
+            flex-direction: column;
+            text-align: center;
+            height: 70%;
+            justify-content: space-around;
+            font-size: 12px;
+        }
+        &__center{
+            width: 90%;
+            padding: 20px 0;
+            
+            .social__media{
+                width: 100%;
+                flex-direction: column;
+                p{
+                    width: 67px;
+                    text-align: center;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

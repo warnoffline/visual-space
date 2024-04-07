@@ -14,7 +14,7 @@ const animation = {
 }
 const SecondBlock = () => {
     return(
-        <div className="second">
+        <div id='second' className="second">
             <div className="second__center">
                 <img className='img1' src={window.screen.width > 600 ? img1 : mob1} alt="" />
                 <motion.h1 {...animation} className='section__first'>Молодая креативная студия</motion.h1>
