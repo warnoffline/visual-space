@@ -43,7 +43,7 @@ const Header = ({isOpen, onOpen, onClose} : HeaderProps) => {
     )
 }
 
-function NavBurger({isOpen, onOpen, onClose} : HeaderProps){
+function NavBurger({onOpen} : HeaderProps){
     const [menuOpen, setMenuOpen] = useState(false)
     const closeMenu = () => {
         setMenuOpen(menuOpen => !menuOpen)
