@@ -44,7 +44,7 @@
         }
         &--right{        
             right: 0px;
-            top: 0px;
+            bottom: 0px;
         }
     }
 
@@ -52,10 +52,10 @@
 @media screen and (max-width: 600px) and (min-width: 300px) {
     .first{
         height: 100%;
-        padding: 50px 0;
+        padding: 60px 0;
         &__center{
             width: 90%;
-            gap: 50px;
+            gap: 135px;
             display: flex;
             &-down{
                 align-items: center;
@@ -81,7 +81,7 @@
     }
     .first__image--right{
         right: 0px;
-        top: 0px;
+        top: 0px;   
     }
     .modal_btn{
         display: flex;
