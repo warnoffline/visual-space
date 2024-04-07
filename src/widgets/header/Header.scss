@@ -101,10 +101,12 @@
     align-items: center;
 }
 .hamburger{
-    right: 20px;
-    width: 40px;
-    height: 40px; 
-    position: fixed;
+    img{
+        right: 20px;
+        width: 40px;
+        height: 40px; 
+        position: fixed;
+    }
     display: flex;
     justify-content: center;
     align-items: center;

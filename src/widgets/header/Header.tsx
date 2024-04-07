@@ -13,7 +13,7 @@ type HeaderProps = {
 }
 const variants = {
     open: { opacity: 1, x: 0 },
-    closed: { opacity: 0, x: -100 },
+    closed: { opacity: 0, x: '-100%' },
   }
 const Header = ({isOpen, onOpen, onClose} : HeaderProps) => {
     return (
@@ -34,7 +34,7 @@ const Header = ({isOpen, onOpen, onClose} : HeaderProps) => {
                     </nav>
                     <button onClick={onOpen} className='head__button'>Оставить заявку</button>
                 </>) :
-                (<NavBurger isOpen={isOpen} onOpen={onOpen} onClose={onClose}/>)
+                ((<NavBurger isOpen={isOpen} onOpen={onOpen} onClose={onClose}/>))
                 }
             </div>
             </div>
