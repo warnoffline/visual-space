@@ -13,25 +13,27 @@ export function SendPersonalForm({onClose}: SendPersonalFormProps) {
     }
     return <form className="send-personal" onSubmit={handleSubmit(onSubmit)}>
         <div className="send-personal__inputs">
-<div className="send-perosnal__block">
-<Input type="text" className="send-personal__input send-personal__input--upper" placeholder="Ваше имя" {...register("name", {required: "Введите имя "})} isInvalid={!!errors.name}/>
-        {errors.name && (
-        <p className="send-personal__error">Введите имя</p>
-      )}
-</div>
-      <div className="send-personal__block">
-      <Input type="phone" className="send-personal__input send-personal__input--lower" placeholder="Номер телефона"  {...register("phone", {required: "Введите номер телефона"})} />
-        {errors.phone && (
-        <p className="send-personal__error">Введите корректный телефон</p>
-      )}
-      </div>
-           <Textarea resize="none" className="send-personal__textarea" placeholder="Комментарий к проекту"  {...register("comment")}/>
+            <div className="send-personal__block">
+<               Input type="text" className="send-personal__input send-personal__input--upper" placeholder="Ваше имя" {...register("name", {required: true})} isInvalid={!!errors.name}/>
+                {errors.name && (
+                <p className="send-personal__error">Введите имя</p>
+                )}
+            </div>
+            
+            <div className="send-personal__block">
+                <Input type="phone" className="send-personal__input send-personal__input--lower" placeholder="Номер телефона"  {...register("phone", {required: true})} isInvalid={!!errors.phone}/>
+                {errors.phone && (
+                <p className="send-personal__error">Введите корректный телефон</p>
+                )}
+            </div>
+
+           <Textarea resize="none" className="send-personal__textarea" placeholder="Комментарий к проекту"  {...register("comment")} />
 
         </div>
 
-           <div className="send-personal__submit">
+        <div className="send-personal__submit">
            <Button fz={20}>Отправить заявку</Button>
            <p className="send-personal__agreement">Я даю согласие, что студия Visual Space собирает и хранит личные данные, указанные в этой контактной форме.</p>
-           </div>
+        </div>
     </form>
 }
