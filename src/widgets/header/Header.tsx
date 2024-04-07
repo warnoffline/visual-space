@@ -16,7 +16,7 @@ const Header = ({isOpen, onOpen, onClose} : HeaderProps) => {
                 <nav className='head__links'>
                     <a href="#">О нас</a>
                     <div className="head__links-line"></div>
-                    <a href="#">Преимущества</a>
+                    <a href="#">Преимущества</a>ы
                     <div className="head__links-line"></div>
                     <a href="#">Услуги</a>
                 </nav>
