@@ -10,12 +10,13 @@ type HeaderProps = {
     isOpen: boolean;
     onOpen: () => void;
     onClose: () => void;
+    onReadyOpen: () => void;
 }
 const variants = {
     open: { opacity: 1, x: 0 },
     closed: { opacity: 0, x: '-100%' },
   }
-const Header = ({isOpen, onOpen, onClose} : HeaderProps) => {
+const Header = ({isOpen, onOpen, onClose, onReadyOpen} : HeaderProps) => {
     return (
         <header className='header'>
             <div className='header_fixed'>
@@ -34,11 +35,11 @@ const Header = ({isOpen, onOpen, onClose} : HeaderProps) => {
                     </nav>
                     <button onClick={onOpen} className='head__button'>Оставить заявку</button>
                 </>) :
-                ((<NavBurger isOpen={isOpen} onOpen={onOpen} onClose={onClose}/>))
+                ((<NavBurger isOpen={isOpen} onOpen={onOpen} onClose={onClose} onReadyOpen={onReadyOpen}/>))
                 }
             </div>
             </div>
-            <MyModal isOpen={isOpen} onClose={onClose} />
+            <MyModal isOpen={isOpen} onClose={onClose} onReadyOpen={onReadyOpen}/>
         </header>
     )
 }

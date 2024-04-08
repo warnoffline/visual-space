@@ -6,6 +6,7 @@ type FirstBlockProps = {
     isOpen: boolean;
     onOpen: () => void;
     onClose: () => void;
+    onReadyOpen: () => void;
 }
 const animation = {
     initial: { opacity: 0, y: 50 },
@@ -14,7 +15,7 @@ const animation = {
     transition: { duration: 1.5 }
 }
 
-const FirstBlock = ({onOpen, isOpen, onClose}: FirstBlockProps) => {
+const FirstBlock = ({onOpen, isOpen, onClose, onReadyOpen}: FirstBlockProps) => {
     return (
         <div className='first'>
             <div className='first__center'>
@@ -28,7 +29,7 @@ const FirstBlock = ({onOpen, isOpen, onClose}: FirstBlockProps) => {
                     </div>
                 </motion.div>
             </div>
-            <MyModal isOpen={isOpen} onClose={onClose}/>
+            <MyModal isOpen={isOpen} onClose={onClose} onReadyOpen={onReadyOpen}/>
         </div>
     )
 }
