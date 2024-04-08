@@ -2,13 +2,19 @@ import {Heading, Input, Textarea } from "@chakra-ui/react";
 import Button from "../../../shared/button/Button";
 import { useForm } from "react-hook-form";
 import "./SendPersonalForm.scss"
-    
+import { personalDataService } from "../api/personalData.service";
+    type FieldValues = {
+        name: string;
+        phone: string;
+        comment: string;
+    }
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function SendPersonalForm({onCloseFirst, onReadyOpen}:any) {
-    const {register, handleSubmit, formState:{errors}} = useForm()
-    const onSubmit = (data: unknown) => {
+    const {register, handleSubmit, formState:{errors}} = useForm<FieldValues>()
+    const onSubmit = (data: FieldValues) => {
+      personalDataService.send(data)
         onCloseFirst()
         onReadyOpen()
-        console.log(data);
     }
     return <form className="send-personal" onSubmit={handleSubmit(onSubmit)}>
         <Heading fontSize="xxx-large" fontWeight={900} fontFamily="Unbounded" className="send-personal__heading">Оставить заявку</Heading>
